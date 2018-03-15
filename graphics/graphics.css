@@ -1,0 +1,36 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0);
+	font-size: 16px;
+}
+#container {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	font-family: 'Roboto', 'Arial', sans-serif;
+}
+#container.res720p {
+	width: 1280px;
+	height: 720px;
+}
+
+#lowerthird {
+	position: absolute;
+	bottom: 4rem;
+	left: 0;
+	background-color: rgba(24, 24, 24, .68);
+	color: #fefefe;
+	display: flex;
+	line-height: 1rem;
+}
+#lowerthird .title {
+	padding: .75rem;
+	background-color: rgba(24, 24, 24, .32);
+}
+#lowerthird .title h3 { margin: 0; }
+#lowerthird .content { padding: .75rem; }
