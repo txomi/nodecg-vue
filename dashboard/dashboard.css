@@ -1,0 +1,8 @@
+/* just some customization for vuetify in nodecg panels */
+body { margin: 0 }
+.application--wrap { min-height: 2vh }
+@media only screen and (max-width: 599px) {
+	.container { padding: 16px }
+}
+.dashboard { width: 100%;	}
+.dashboard .input-group__details { min-height: 10px }
