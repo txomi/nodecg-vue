@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+	<link href="../../node_modules/vuetify/dist/vuetify.min.css" rel="stylesheet">
+	<script src="../../node_modules/vue/dist/vue.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../dashboard.css">
+</head>
+<body>
+<body>
+	<div id="app"></div>
+
+<script type="text/x-template" id="dashboard">
+	<div class="dashboard">
+
+		<div class="layout row text-xs-center">
+			<v-text-field label="Title" v-model.string="title" required></v-text-field>
+		</div>
+		<div class="layout row text-xs-center">
+			<v-text-field label="Text" v-model.string="text" required></v-text-field>
+		</div>
+
+		<div class="layout row text-xs-center">
+			<v-btn block large @click.prevent="saveData" color="light-blue" class="white--text">Save</v-btn>
+		</div>
+
+		<div class="layout row text-xs-center">
+			<v-btn block large @click.prevent="togglePanel" :disabled='isShowing' color="indigo" class="white--text">Show</v-btn>
+			<v-btn block large @click.prevent="togglePanel" :disabled='!isShowing' color="pink" class="white--text">Hide</v-btn>
+		</div>
+
+	</div>
+</script>
+<script src="../../node_modules/vuetify/dist/vuetify.min.js" type="text/javascript"></script>
+<script src="./index.js" type="text/javascript"></script>
+<script src="../dashboard.js" type="text/javascript"></script>
+</body>
+</html>
