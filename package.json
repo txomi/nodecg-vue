@@ -1,0 +1,31 @@
+{
+  "name": "nodecg-vue",
+  "description": "Vue bundle example for nodecg",
+  "version": "0.0.1",
+  "nodecg": {
+    "compatibleRange": "~0.9.0",
+    "extension": {
+      "path": "extension"
+    },
+    "dashboardPanels": [
+      {
+        "name": "lowerthird",
+        "title": "Very simple lowerthird",
+        "file": "lowerthird/index.html",
+        "width": 3
+      }
+    ],
+    "graphics": [
+      {
+        "file": "lowerthird.html",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vuetify": "^1.0.8"
+  },
+  "scripts": {}
+}
